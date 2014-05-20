@@ -46,7 +46,7 @@ while page < 3:
         album = review_tree.cssselect('div#main div.info h2')[0].text_content()
         reviewer = review_tree.cssselect('div#main div.info h4 address')[0].text_content()
         score = review_tree.cssselect('div#main div.info span.score')[0].text_content()
-        review = review_tree.cssselect('.editorial')[0].text_content()
+        review = review_tree.cssselect('div#main div.editorial')[0].text_content()
         
         publish_date = review_tree.cssselect('div#main div.info span.pub-date')[0].text_content()
         publish_date = datetime.datetime.strptime(publish_date, '%B %d, %Y')
