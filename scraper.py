@@ -72,7 +72,7 @@ while page < 3:
             'accolade': accolade,
             'publish_date': publish_date,
             'url': review_href,
-            'review_text': review_text
+            'text': review_text
         }
 
         scraperwiki.sqlite.save(['url'], data)
